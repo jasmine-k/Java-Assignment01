@@ -57,27 +57,4 @@ public interface TraineeComparison extends TraineeScoreCalculation {
 
     }
 
-
-    static double averageScore(Trainee trainee) {
-        return Arrays.stream(trainee.getScore().stream()).collect(Collectors.averagingDouble(trainee.getScore()));
-
-    }
-
-/*
-    static Stream<Trainee> getTrainee(List<Trainee> listOfTrainee, int limit, int skip) {
-        return listOfTrainee.stream().limit(limit).skip(skip);
-
-    }
-
-    static Stream<String> getDistinctLastName(List<Trainee> listOfTrainee){
-        return listOfTrainee.stream().map(Trainee::getLastName).distinct();
-        //return listOfTrainee.get.distinct();
-    }
-*/
-
-/*
-    static void debugName(List<Trainee> listOfTrainee){
-        listOfTrainee.stream().peek(value-> System.out.println(value)).forEach(System.out::println);
-    }*/
-
 }
